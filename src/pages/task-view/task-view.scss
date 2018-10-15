@@ -1,0 +1,47 @@
+page-task-view {
+    /*ion-title{
+        color: yellowgreen;
+        background-color: darkgray;;
+    }*/
+
+    /*span{
+        background-color: gray;
+        float: right;
+        margin-bottom: 5px;
+    }*/
+
+    .main{
+        background-color: gray;
+    }
+
+    .bAdd h2{
+        color: yellowgreen;
+        text-align: center;
+        margin-top: 20%;
+
+        
+    }
+
+    page-task-view span {
+        float: right;
+        margin-bottom: 5px;
+    }
+
+    /*.bAdd button{
+        background-color: darkgrey;
+    }*/
+
+    .bMenu{
+        float: right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .date{
+        font-size: 12px;
+    }
+
+    .time{
+        font-size: 10px;
+    }
+}

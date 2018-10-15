@@ -1,0 +1,52 @@
+<!--
+  Generated template for the TaskViewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar colors="darkgray">
+      <ion-title>My Tasks</ion-title>
+  </ion-navbar>
+
+  <!--<ion-navbar  primary hideBackButton="true">
+      <ion-buttons>
+        <button>
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+    
+      <ion-buttons end>
+        <button>
+          <ion-icon name="add-circle"></ion-icon>
+          Save
+        </button>
+      </ion-buttons>
+    </ion-navbar>-->
+
+</ion-header>
+
+
+<ion-content padding class="main">
+
+  <div class="bAdd" *ngIf = "taskList.length == 0">
+    <h2>You don't have any scheduled task</h2>
+    <button style="background-color: darkgray" ion-button (click)="addTask()" full>Add Task</button>
+  </div>
+
+  <ion-list >
+    <ion-item *ngFor = "let task of taskList" style="background-color: gray">
+      <div class="task"> {{task.taskName}}</div>
+      <div class="date"><b> Date</b> {{task.date}}</div> 
+      <div class="time"><b>Time</b> {{task.time}} </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom class="web-fab">
+    <button ion-fab  color="primary" (click)="addTask()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

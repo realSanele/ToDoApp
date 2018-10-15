@@ -1,0 +1,33 @@
+<!--
+  Generated template for the TaskAddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar colors="darkgray">
+    <ion-title style="text-align: center">Add Task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="main">
+  <ion-item>
+    <ion-label color="primary" floating>Task Name</ion-label>
+    <ion-input [(ngModel)] = "taskName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="primary" stacked>Date</ion-label>
+      <ion-input type="date" [(ngModel)] = "date"></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Time</ion-label>
+    <ion-input type="time" [(ngModel)] = "time"></ion-input>
+  </ion-item>
+  <button style="background-color: darkgray" ion-button full (click)="add()">Add</button>
+
+</ion-content>
